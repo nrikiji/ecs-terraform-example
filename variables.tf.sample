@@ -1,0 +1,54 @@
+
+variable main_host {
+  default     = "example.com"
+  type        = string
+  description = "ルートホスト名"
+}
+
+variable frontend_host {
+  default     = "frontend.example.com"
+  type        = string
+  description = "フロントエンドホスト名"
+}
+
+variable backend_host {
+  default     = "backend.example.com"
+  type        = string
+  description = "バックエンドホスト名"
+}
+
+variable frontend_image_url {
+  default     = "xxxxx.dkr.ecr.ap-northeast-1.amazonaws.com/ecs-example-frontend:latest"
+  type        = string
+  description = "RDSエントリポイント(フロントエンド)"
+}
+
+variable backend_image_url {
+  default     = "xxxxx.dkr.ecr.ap-northeast-1.amazonaws.com/ecs-example-backend:latest"
+  type        = string
+  description = "RDSエントリポイント(バックエンド)"
+}
+
+variable mysql_name {
+  default     = "test"
+  type        = string
+  description = "MySQLデータベース名"
+}
+
+variable mysql_username {
+  default     = "test"
+  type        = string
+  description = "MySQLユーザー名"
+}
+
+variable mysql_password {
+  default     = "password"
+  type        = string
+  description = "MySQLパスワード"
+}
+
+variable mysql_instance_class {
+  default     = "db.t2.micro"
+  type        = string
+  description = "MySQL EC2インスタンスクラス"
+}

@@ -1,0 +1,8 @@
+# terraform
+.terraform
+terraform.tfstate
+terraform.tfstate.backup
+.terraform.tfstate.lock.info
+
+# 環境によって異なる値
+variables.tf
